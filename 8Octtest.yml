@@ -23,6 +23,6 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'C:\app\_work'
+    SourceFolder:
     Contents: '**\.war'
     TargetFolder: '$(build.artifactstagingdirectory)'
