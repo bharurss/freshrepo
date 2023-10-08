@@ -27,4 +27,3 @@ steps:
   inputs:
     PathtoPublish: 'C:\app\apache-tomcat-8.5.93\webapps\'
     ArtifactName: 'demoartifact'
-    publishLocation: 'Container'
