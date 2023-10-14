@@ -13,8 +13,7 @@ steps:
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'sonarqubelocal'
-    scannerMode: 'Other'
-
+    scannerMode: 'sonar-scanner'
 - task: SonarQubeAnalyze@5
   inputs:
     jdkversion: 'JAVA_HOME'
