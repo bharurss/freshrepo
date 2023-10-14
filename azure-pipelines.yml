@@ -12,7 +12,7 @@ steps:
 
 - task: SonarQubeAnalyze@5
   inputs:
-    jdkversion: 'JAVA_HOME'
+    jdkversion: 'JAVA_HOME_11_X64'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
