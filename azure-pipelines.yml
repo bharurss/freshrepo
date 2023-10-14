@@ -9,6 +9,10 @@ trigger:
 pool: bharathtestpool
 
 steps:
+- task: SonarQubePrepare@5
+  inputs:
+    SonarQube: 'sonarqubelocal'
+    scannerMode: 'Other'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
