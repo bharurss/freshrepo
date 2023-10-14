@@ -13,6 +13,9 @@ steps:
   inputs:
     SonarQube: 'sonarqubelocal'
     scannerMode: 'Other'
+- task: SonarQubeAnalyze@5
+  inputs:
+    jdkversion: 'JAVA_HOME'
 - task: Maven@3
   inputs:
     mavenPomFile: 'pom.xml'
