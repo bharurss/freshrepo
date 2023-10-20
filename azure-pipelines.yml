@@ -23,9 +23,9 @@ steps:
     goals: 'package'
 - task: SonarQubePrepare@5
   inputs:
-    SonarQube: 'tosonarcloud'
+    SonarQube: 'tosonarqube'
     scannerMode: 'Other'
-    extraProperties: 'sonar.jav.binaries=.'
+    extraProperties: 'sonar.java.binaries=.'
 
 - task: CopyFiles@2
   inputs:
