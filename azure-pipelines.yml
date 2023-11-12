@@ -9,7 +9,17 @@ trigger:
 pool: Azure Pipelines
 
 steps:
-
+- task: SonarCloudPrepare@1
+  inputs:
+    SonarCloud: 'sonarcloudconnect'
+    organization: 'test-bharath'
+    scannerMode: 'Other'
+- task: SonarCloudAnalyze@1
+  inputs:
+    jdkversion: 'JAVA_HOME_11_X64'
+- task: SonarCloudPublish@1
+  inputs:
+    pollingTimeoutSec: '300'
 
 - task: Maven@3
   inputs:
