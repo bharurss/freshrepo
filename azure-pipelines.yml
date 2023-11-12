@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  vm-Image: windows-latest
+  vm-Image: "windows-latest"
 
 steps:
 
