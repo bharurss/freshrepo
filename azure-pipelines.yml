@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool: 
-  vm-Image: "windows-latest"
+  vm-Image: Hosted Agent
 
 steps:
 
