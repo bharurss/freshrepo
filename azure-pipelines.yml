@@ -6,8 +6,7 @@
 trigger:
 - master
 
-pool: 
-  vm-Image: Hosted Agent
+pool: Azure Pipelines
 
 steps:
 
